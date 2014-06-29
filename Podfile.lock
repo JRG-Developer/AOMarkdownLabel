@@ -1,0 +1,16 @@
+PODS:
+  - AOLabel (1.0.0)
+  - Expecta (0.3.0)
+  - OCMock (3.0)
+
+DEPENDENCIES:
+  - AOLabel (~> 1.0)
+  - Expecta (~> 0.3)
+  - OCMock (~> 3.0)
+
+SPEC CHECKSUMS:
+  AOLabel: 12181fcc0ab3c4abda06a94de1e8ca979b18009f
+  Expecta: ce8a51b9fad15a2cd573b291cb2909aaed865350
+  OCMock: 6e6041173cf801f458ef66ec1a8fa3d974947335
+
+COCOAPODS: 0.33.1

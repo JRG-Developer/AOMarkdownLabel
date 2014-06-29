@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10EE3D0FBCFE483BA6878E39 /* libPods-AOMarkdownLabelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCB4775E9888466D8427072D /* libPods-AOMarkdownLabelTests.a */; };
 		4425E2541960B27700401F8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425E2531960B27700401F8D /* Foundation.framework */; };
 		4425E2591960B27700401F8D /* AOMarkdownLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4425E2581960B27700401F8D /* AOMarkdownLabel.h */; };
 		4425E25B1960B27700401F8D /* AOMarkdownLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425E25A1960B27700401F8D /* AOMarkdownLabel.m */; };
@@ -15,7 +16,8 @@
 		4425E2651960B27700401F8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425E2641960B27700401F8D /* UIKit.framework */; };
 		4425E2681960B27700401F8D /* libAOMarkdownLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425E2501960B27700401F8D /* libAOMarkdownLabel.a */; };
 		4425E26E1960B27700401F8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4425E26C1960B27700401F8D /* InfoPlist.strings */; };
-		4425E2701960B27700401F8D /* AOMarkdownLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425E26F1960B27700401F8D /* AOMarkdownLabelTests.m */; };
+		4425E27A1960B56E00401F8D /* AOMarkdownLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425E2791960B56E00401F8D /* AOMarkdownLabelTests.m */; };
+		EFF5371F2C8F4401B4BF27CF /* libPods-AOMarkdownLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 898315C6A44D42439FCF0FDE /* libPods-AOMarkdownLabel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32D5E72BD4C74E67AF3703F7 /* Pods-AOMarkdownLabelTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOMarkdownLabelTests.xcconfig"; path = "Pods/Pods-AOMarkdownLabelTests.xcconfig"; sourceTree = "<group>"; };
 		4425E2501960B27700401F8D /* libAOMarkdownLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAOMarkdownLabel.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4425E2531960B27700401F8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4425E2571960B27700401F8D /* AOMarkdownLabel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOMarkdownLabel-Prefix.pch"; sourceTree = "<group>"; };
@@ -52,7 +55,10 @@
 		4425E2641960B27700401F8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4425E26B1960B27700401F8D /* AOMarkdownLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOMarkdownLabelTests-Info.plist"; sourceTree = "<group>"; };
 		4425E26D1960B27700401F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4425E26F1960B27700401F8D /* AOMarkdownLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOMarkdownLabelTests.m; sourceTree = "<group>"; };
+		4425E2791960B56E00401F8D /* AOMarkdownLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOMarkdownLabelTests.m; sourceTree = "<group>"; };
+		845F0731135441D6BFC7006B /* Pods-AOMarkdownLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOMarkdownLabel.xcconfig"; path = "Pods/Pods-AOMarkdownLabel.xcconfig"; sourceTree = "<group>"; };
+		898315C6A44D42439FCF0FDE /* libPods-AOMarkdownLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOMarkdownLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB4775E9888466D8427072D /* libPods-AOMarkdownLabelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOMarkdownLabelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4425E2541960B27700401F8D /* Foundation.framework in Frameworks */,
+				EFF5371F2C8F4401B4BF27CF /* libPods-AOMarkdownLabel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +79,7 @@
 				4425E2681960B27700401F8D /* libAOMarkdownLabel.a in Frameworks */,
 				4425E2651960B27700401F8D /* UIKit.framework in Frameworks */,
 				4425E2631960B27700401F8D /* Foundation.framework in Frameworks */,
+				10EE3D0FBCFE483BA6878E39 /* libPods-AOMarkdownLabelTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 				4425E2691960B27700401F8D /* AOMarkdownLabelTests */,
 				4425E2521960B27700401F8D /* Frameworks */,
 				4425E2511960B27700401F8D /* Products */,
+				32D5E72BD4C74E67AF3703F7 /* Pods-AOMarkdownLabelTests.xcconfig */,
+				845F0731135441D6BFC7006B /* Pods-AOMarkdownLabel.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +113,8 @@
 				4425E2531960B27700401F8D /* Foundation.framework */,
 				4425E2611960B27700401F8D /* XCTest.framework */,
 				4425E2641960B27700401F8D /* UIKit.framework */,
+				DCB4775E9888466D8427072D /* libPods-AOMarkdownLabelTests.a */,
+				898315C6A44D42439FCF0FDE /* libPods-AOMarkdownLabel.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,7 +140,7 @@
 		4425E2691960B27700401F8D /* AOMarkdownLabelTests */ = {
 			isa = PBXGroup;
 			children = (
-				4425E26F1960B27700401F8D /* AOMarkdownLabelTests.m */,
+				4425E2791960B56E00401F8D /* AOMarkdownLabelTests.m */,
 				4425E26A1960B27700401F8D /* Supporting Files */,
 			);
 			path = AOMarkdownLabelTests;
@@ -150,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4425E2731960B27700401F8D /* Build configuration list for PBXNativeTarget "AOMarkdownLabel" */;
 			buildPhases = (
+				B98AE3E531874883B8C2BAF8 /* Check Pods Manifest.lock */,
 				4425E24C1960B27700401F8D /* Sources */,
 				4425E24D1960B27700401F8D /* Frameworks */,
 				4425E24E1960B27700401F8D /* CopyFiles */,
+				91D74682C0924B8BA82E6DD3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4425E2761960B27700401F8D /* Build configuration list for PBXNativeTarget "AOMarkdownLabelTests" */;
 			buildPhases = (
+				F7E8D9CCEF974FF7897F9780 /* Check Pods Manifest.lock */,
 				4425E25C1960B27700401F8D /* Sources */,
 				4425E25D1960B27700401F8D /* Frameworks */,
 				4425E25E1960B27700401F8D /* Resources */,
+				937A0D48FB1E46518742F210 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,6 +235,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91D74682C0924B8BA82E6DD3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AOMarkdownLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		937A0D48FB1E46518742F210 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AOMarkdownLabelTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B98AE3E531874883B8C2BAF8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E8D9CCEF974FF7897F9780 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4425E24C1960B27700401F8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -232,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4425E2701960B27700401F8D /* AOMarkdownLabelTests.m in Sources */,
+				4425E27A1960B56E00401F8D /* AOMarkdownLabelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,11 +407,11 @@
 		};
 		4425E2741960B27700401F8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845F0731135441D6BFC7006B /* Pods-AOMarkdownLabel.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AOMarkdownLabel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOMarkdownLabel/AOMarkdownLabel-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -340,11 +419,11 @@
 		};
 		4425E2751960B27700401F8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 845F0731135441D6BFC7006B /* Pods-AOMarkdownLabel.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/AOMarkdownLabel.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AOMarkdownLabel/AOMarkdownLabel-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -352,6 +431,7 @@
 		};
 		4425E2771960B27700401F8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D5E72BD4C74E67AF3703F7 /* Pods-AOMarkdownLabelTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -372,6 +452,7 @@
 		};
 		4425E2781960B27700401F8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D5E72BD4C74E67AF3703F7 /* Pods-AOMarkdownLabelTests.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -405,6 +486,7 @@
 				4425E2751960B27700401F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4425E2761960B27700401F8D /* Build configuration list for PBXNativeTarget "AOMarkdownLabelTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +495,7 @@
 				4425E2781960B27700401F8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
