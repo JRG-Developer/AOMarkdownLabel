@@ -3,7 +3,7 @@
 //  AOMarkdownLabel
 //
 //  Created by Joshua Greene on 6/29/14.
-//  Copyright (c) 2014 App-Order, LLC. All rights reserved.
+//  Copyright (c) 2014 App-Order, LLC http://www.app-order.com
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -12,8 +12,12 @@
 //  copies of the Software, and to permit persons to whom the Software is
 //  furnished to do so, subject to the following conditions:
 //
-//  The above copyright notice and this permission notice shall be included in
+//  1. The above copyright notice and this permission notice shall be included in
 //  all copies or substantial portions of the Software.
+//
+//  2. Neither the name of the copyright holder nor the names of its contributors
+//  may be used to endorse or promote products derived from this software without
+//  specific prior written permission.
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -24,6 +28,7 @@
 //  THE SOFTWARE.
 
 #import "AOMarkdownLabel.h"
+#import "AOMarkdownTextStorage.h"
 
 @implementation AOMarkdownLabel
 
@@ -49,11 +54,42 @@
 
 - (void)commonInit
 {
-  
+  [self setUpTextKitStack];
 }
 
 #pragma mark - Text Kit Stack Setup
 
+- (void)setUpTextKitStack
+{
+  [self setUpLayoutManager];
+  [self setUpTextContainer];
+  [self setUpTextStorage];
+  
+  [self assocateTextKitStackObjects];
+}
 
+- (void)setUpLayoutManager
+{
+  self.layoutManager = [[NSLayoutManager alloc] init];
+}
+
+- (void)setUpTextContainer
+{
+  self.textContainer = [[NSTextContainer alloc] init];
+  self.textContainer.lineBreakMode = self.lineBreakMode;
+  self.textContainer.maximumNumberOfLines = self.numberOfLines;
+  self.textContainer.size = self.frame.size;
+}
+
+- (void)setUpTextStorage
+{
+  self.textStorage = [[AOMarkdownTextStorage alloc] init];
+}
+
+- (void)assocateTextKitStackObjects
+{
+  [self.layoutManager addTextContainer:self.textContainer];
+  [self.textContainer setLayoutManager:self.layoutManager];
+}
 
 @end

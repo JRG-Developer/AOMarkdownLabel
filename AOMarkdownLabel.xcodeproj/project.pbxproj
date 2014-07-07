@@ -17,6 +17,8 @@
 		4425E2681960B27700401F8D /* libAOMarkdownLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4425E2501960B27700401F8D /* libAOMarkdownLabel.a */; };
 		4425E26E1960B27700401F8D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4425E26C1960B27700401F8D /* InfoPlist.strings */; };
 		4425E27A1960B56E00401F8D /* AOMarkdownLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4425E2791960B56E00401F8D /* AOMarkdownLabelTests.m */; };
+		44F0A03F196A1AB4008BDB92 /* AOMarkdownTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F0A03E196A1AB4008BDB92 /* AOMarkdownTextStorage.m */; };
+		44F0A041196A1B71008BDB92 /* AOMarkdownTextStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44F0A040196A1B71008BDB92 /* AOMarkdownTextStorageTests.m */; };
 		EFF5371F2C8F4401B4BF27CF /* libPods-AOMarkdownLabel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 898315C6A44D42439FCF0FDE /* libPods-AOMarkdownLabel.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,9 @@
 		4425E26B1960B27700401F8D /* AOMarkdownLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOMarkdownLabelTests-Info.plist"; sourceTree = "<group>"; };
 		4425E26D1960B27700401F8D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4425E2791960B56E00401F8D /* AOMarkdownLabelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOMarkdownLabelTests.m; sourceTree = "<group>"; };
+		44F0A03D196A1AB4008BDB92 /* AOMarkdownTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOMarkdownTextStorage.h; sourceTree = "<group>"; };
+		44F0A03E196A1AB4008BDB92 /* AOMarkdownTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOMarkdownTextStorage.m; sourceTree = "<group>"; };
+		44F0A040196A1B71008BDB92 /* AOMarkdownTextStorageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOMarkdownTextStorageTests.m; sourceTree = "<group>"; };
 		845F0731135441D6BFC7006B /* Pods-AOMarkdownLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOMarkdownLabel.xcconfig"; path = "Pods/Pods-AOMarkdownLabel.xcconfig"; sourceTree = "<group>"; };
 		898315C6A44D42439FCF0FDE /* libPods-AOMarkdownLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOMarkdownLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB4775E9888466D8427072D /* libPods-AOMarkdownLabelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AOMarkdownLabelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +129,8 @@
 			children = (
 				4425E2581960B27700401F8D /* AOMarkdownLabel.h */,
 				4425E25A1960B27700401F8D /* AOMarkdownLabel.m */,
+				44F0A03D196A1AB4008BDB92 /* AOMarkdownTextStorage.h */,
+				44F0A03E196A1AB4008BDB92 /* AOMarkdownTextStorage.m */,
 				4425E2561960B27700401F8D /* Supporting Files */,
 			);
 			path = AOMarkdownLabel;
@@ -141,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				4425E2791960B56E00401F8D /* AOMarkdownLabelTests.m */,
+				44F0A040196A1B71008BDB92 /* AOMarkdownTextStorageTests.m */,
 				4425E26A1960B27700401F8D /* Supporting Files */,
 			);
 			path = AOMarkdownLabelTests;
@@ -304,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4425E25B1960B27700401F8D /* AOMarkdownLabel.m in Sources */,
+				44F0A03F196A1AB4008BDB92 /* AOMarkdownTextStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4425E27A1960B56E00401F8D /* AOMarkdownLabelTests.m in Sources */,
+				44F0A041196A1B71008BDB92 /* AOMarkdownTextStorageTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

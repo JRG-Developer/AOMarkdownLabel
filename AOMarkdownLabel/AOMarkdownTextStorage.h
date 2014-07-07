@@ -1,8 +1,8 @@
 //
-//  AOMarkdownLabel.h
+//  AOMarkdownTextStorage.h
 //  AOMarkdownLabel
 //
-//  Created by Joshua Greene on 6/29/14.
+//  Created by Joshua Greene on 7/6/14.
 //  Copyright (c) 2014 App-Order, LLC http://www.app-order.com
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,36 +27,9 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <AOLabel/AOLabel.h>
+#import <UIKit/UIKit.h>
 
-@class AOMarkdownTextStorage;
-
-/**
- *  `AOMarkdown` is a drop-in replacement for `UILabel` that supports simple Github flavored markdown, link embeddin, and dynamic type text.
- *  @see https://help.github.com/articles/github-flavored-markdown
- */
-@interface AOMarkdownLabel : AOLabel
-
-/**
- *  The layout manager
- */
-@property (nonatomic, strong) NSLayoutManager *layoutManager;
-
-/**
- *  The text container
- */
-@property (nonatomic, strong) NSTextContainer *textContainer;
-
-/**
- *  The text storage
- */
-@property (nonatomic, strong) AOMarkdownTextStorage *textStorage;
-@end
-
-@interface AOMarkdownLabel (Protected)
-
-/**
- *  This method is called by all `init` methods to do common object setup.
- */
-- (void)commonInit __attribute((objc_requires_super));
+@interface AOMarkdownTextStorage : NSTextStorage
+@property (strong, nonatomic) NSDictionary *defaultAttributes;
+- (void)refreshFont;
 @end

@@ -1,8 +1,8 @@
 //
-//  AOMarkdownLabel.h
+//  AOMarkdownTextStorageTests.m
 //  AOMarkdownLabel
 //
-//  Created by Joshua Greene on 6/29/14.
+//  Created by Joshua Greene on 7/6/14.
 //  Copyright (c) 2014 App-Order, LLC http://www.app-order.com
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -27,36 +27,35 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#import <AOLabel/AOLabel.h>
+// Test Class
+#import "AOMarkdownTextStorage.h"
 
-@class AOMarkdownTextStorage;
+// Collaborators
 
-/**
- *  `AOMarkdown` is a drop-in replacement for `UILabel` that supports simple Github flavored markdown, link embeddin, and dynamic type text.
- *  @see https://help.github.com/articles/github-flavored-markdown
- */
-@interface AOMarkdownLabel : AOLabel
+// Test Support
+#import <XCTest/XCTest.h>
 
-/**
- *  The layout manager
- */
-@property (nonatomic, strong) NSLayoutManager *layoutManager;
+#define EXP_SHORTHAND YES
+#import <Expecta/Expecta.h>
 
-/**
- *  The text container
- */
-@property (nonatomic, strong) NSTextContainer *textContainer;
+#import <OCMock/OCMock.h>
 
-/**
- *  The text storage
- */
-@property (nonatomic, strong) AOMarkdownTextStorage *textStorage;
+@interface AOMarkdownTextStorageTests : XCTestCase
 @end
 
-@interface AOMarkdownLabel (Protected)
+@implementation AOMarkdownTextStorageTests
+{
+  AOMarkdownTextStorage *sut;
+}
 
-/**
- *  This method is called by all `init` methods to do common object setup.
- */
-- (void)commonInit __attribute((objc_requires_super));
+#pragma mark - Test Lifecycle
+
+- (void)setUp
+{
+  [super setUp];
+  sut = [[AOMarkdownTextStorage alloc] init];
+}
+
+#pragma mark - Tests
+
 @end
